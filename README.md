@@ -26,6 +26,7 @@ npx skills update johnYyb/vega-test-skills
 |---|---|
 | [create-custom-vega-icon](skills/create-custom-vega-icon/SKILL.md) | Generate Vega icon registration and usage examples for custom SVG icons across JavaScript, React, Angular, Vue, and similar app setups. |
 | [display-vega-dialog](skills/display-vega-dialog/SKILL.md) | Generate Vega dialog and modal examples, including confirmations, destructive actions, and framework-specific integration guidance. |
+| [display-vega-notification](skills/display-vega-notification/SKILL.md) | Generate Vega notification examples, including toast display, dismiss behavior, action buttons, and framework-specific integration guidance. |
 | [use-vega-translation](skills/use-vega-translation/SKILL.md) | Generate Vega translation initialization and language-switching examples for localized Vega apps. |
 
 ## What These Skills Are For
@@ -37,10 +38,11 @@ Use this repository when you want an AI agent to help create or extend a Vega ap
 - return ready-to-use examples instead of vague instructions
 - adapt examples for common frameworks and runtime environments
 
-Current coverage focuses on three common Vega app tasks:
+Current coverage focuses on four common Vega app tasks:
 
 - registering and rendering custom Vega icons
 - opening standard dialogs or custom modal flows
+- showing Vega notifications and dismiss flows
 - initializing Vega translation resources and switching languages
 
 ## Contributing
@@ -61,6 +63,8 @@ skills/
 	create-custom-vega-icon/
 		SKILL.md
 	display-vega-dialog/
+		SKILL.md
+	display-vega-notification/
 		SKILL.md
 	use-vega-translation/
 		SKILL.md
