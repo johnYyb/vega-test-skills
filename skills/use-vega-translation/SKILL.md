@@ -1,6 +1,6 @@
 ---
 name: use-vega-translation
-description: 'Generates VegaTranslation initialization and usage for Vega apps. Use this skill when the user wants to localize Vega component text, add translation resources, switch languages with VegaTranslation.changeLanguage, read VegaTranslation.currentLanguage, use VegaTranslationResourceEN, or create JavaScript, React, Angular, Vue, Stencil, or Next.js examples for Vega translation.'
+description: 'Generates Vega translation examples for Vega apps. Use this skill when the user wants to localize Vega component text, add translation resources, switch languages with VegaTranslation.changeLanguage, read VegaTranslation.currentLanguage, use VegaTranslationResourceEN, or create JavaScript, React, Angular, Vue, Stencil, or Next.js examples for Vega translation.'
 ---
 
 # Use Vega Translation

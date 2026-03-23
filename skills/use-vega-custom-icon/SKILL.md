@@ -1,9 +1,9 @@
 ---
-name: create-custom-vega-icon
-description: Generates VegaIconManager registration code and framework-specific usage for custom SVG icons in Vega.
+name: use-vega-custom-icon
+description: 'Generates Vega custom icon examples for Vega apps. Use this skill when the user wants to register a custom SVG icon with VegaIconManager, render a custom icon with VegaIcon or vega-icon, preserve intrinsic icon size with autoSize, or create JavaScript, React, Angular, Vue, or Stencil examples for Vega custom icons.'
 ---
 
-# Create Custom Vega Icon
+# Use Vega Custom Icon
 
 ## Purpose
 

@@ -15,8 +15,15 @@ It is not a runnable Vega application. Instead, it is a set of capability defini
 The current repository covers these Vega scenarios:
 
 - custom icon registration and rendering
+- render completion checks and post-render flow coordination
 - dialog and modal display flows
+- supported branding migration and official logo usage
+- dark mode initialization and theme switching
+- loading overlay and container-scoped loading flows
+- skeleton placeholder and content-loading flows
+- notification display and dismissal flows
 - translation initialization and language switching
+- white label client color overrides
 
 ## Why This Repository Is Needed
 
@@ -42,7 +49,7 @@ The skills require the AI to return more complete examples instead of loose frag
 
 ### 3. Better Fit Real Engineering Workflows
 
-The skills emphasize practical patterns such as putting initialization at startup, triggering dialogs from user actions, and centralizing translation resources. That is more useful than API notes alone.
+The skills emphasize practical patterns such as putting initialization at startup, coordinating post-render flow after Vega is ready, applying theme and brand preferences consistently, triggering dialogs and loaders from user actions or async workflows, and centralizing translation resources. That is more useful than API notes alone.
 
 ### 4. Reduce Repeated Clarification Work
 
@@ -65,11 +72,25 @@ The current structure is:
 
 ```text
 skills/
-  create-custom-vega-icon/
+  use-vega-custom-icon/
     SKILL.md
-  display-vega-dialog/
+  use-vega-render-status/
+    SKILL.md
+  use-vega-dialog/
+    SKILL.md
+  use-vega-notification/
+    SKILL.md
+  use-vega-branding/
+    SKILL.md
+  use-vega-dark-mode/
+    SKILL.md
+  use-vega-loading-indicator/
+    SKILL.md
+  use-vega-skeleton-loader/
     SKILL.md
   use-vega-translation/
+    SKILL.md
+  use-vega-white-labeling/
     SKILL.md
 ```
 
@@ -77,9 +98,16 @@ Each `SKILL.md` file is an independent capability unit.
 
 For example:
 
-- `create-custom-vega-icon`: guides the AI to register custom SVG icons correctly and render them in React, JavaScript, or other frameworks
-- `display-vega-dialog`: guides the AI to use `VegaDialog.open(...)` or `vega-modal` for standard dialogs and custom modal flows
+- `use-vega-custom-icon`: guides the AI to register custom SVG icons correctly and render them in React, JavaScript, or other frameworks
+- `use-vega-render-status`: guides the AI to use `waitForVega()`, avoid timing issues caused by asynchronous rendering, and run dependent logic only after Vega is ready
+- `use-vega-dialog`: guides the AI to use `VegaDialog.open(...)` or `vega-modal` for standard dialogs and custom modal flows
+- `use-vega-notification`: guides the AI to use `VegaNotify.open(...)`, close notifications correctly, and add actions when needed
+- `use-vega-branding`: guides the AI to use `VegaThemeManager.applyBranding(...)`, configure supported brand migration early, and render official Vega brand logos when needed
+- `use-vega-dark-mode`: guides the AI to use `VegaThemeManager`, apply light or dark mode consistently, and restore user theme preference when needed
+- `use-vega-loading-indicator`: guides the AI to use `VegaLoader.load(...)`, close loaders correctly, and choose between overlays and inline loading indicators
+- `use-vega-skeleton-loader`: guides the AI to use `VegaSkeletonLoader.load(...)`, remove placeholders correctly, and choose between API-managed skeletons and inline skeleton components
 - `use-vega-translation`: guides the AI to initialize `VegaTranslation`, manage translation resources, and switch languages
+- `use-vega-white-labeling`: guides the AI to use `VegaThemeManager.overrideColors(...)`, enforce light mode, and apply client-specific white label color overrides safely
 
 ## How To Use This Repository
 
@@ -104,11 +132,35 @@ Help me register a custom Vega icon in a React page and show a usage example.
 ```
 
 ```text
+Help me wait until Vega finishes rendering before I run my post-render logic.
+```
+
+```text
 Help me add a delete confirmation dialog in a Vega app and trigger it from a button click.
 ```
 
 ```text
+Help me add a dark mode toggle to a Vega app and restore the saved user preference.
+```
+
+```text
+Help me switch a Vega app to Global Payments branding before the UI renders.
+```
+
+```text
+Help me show a Vega loading overlay while a report loads and close it when the request finishes.
+```
+
+```text
+Help me show skeleton placeholder content for a card grid until the API data is ready.
+```
+
+```text
 Help me initialize VegaTranslation and implement English and Chinese language switching.
+```
+
+```text
+Help me apply white label client colors to Vega action buttons and side navigation.
 ```
 
 Requests like these are more likely to match the correct skill and produce accurate code.

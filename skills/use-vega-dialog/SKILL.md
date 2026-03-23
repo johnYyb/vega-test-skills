@@ -1,9 +1,9 @@
 ---
-name: display-vega-dialog
+name: use-vega-dialog
 description: 'Generates Vega dialog examples for Vega apps. Use this skill when the user wants to display a dialog, show a confirmation dialog, open a modal, use VegaDialog.open, customize dialog buttons, handle dialog OK or Cancel actions, or choose between VegaDialog and vega-modal in JavaScript, React, Angular, Vue, Stencil, or Next.js.'
 ---
 
-# Display Vega Dialog
+# Use Vega Dialog
 
 ## Purpose
 

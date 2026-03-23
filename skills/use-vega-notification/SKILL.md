@@ -1,9 +1,9 @@
 ---
-name: display-vega-notification
+name: use-vega-notification
 description: 'Generates Vega notification examples for Vega apps. Use this skill when the user wants to show a notification, display a toast, use VegaNotify.open, close a notification, close all notifications, add notification action buttons, customize success or error notification types, or create JavaScript, React, Angular, Vue, Stencil, or Next.js examples for Vega notifications.'
 ---
 
-# Display Vega Notification
+# Use Vega Notification
 
 ## Purpose
 

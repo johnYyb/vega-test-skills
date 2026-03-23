@@ -22,12 +22,35 @@ npx skills update johnYyb/vega-test-skills
 
 ## Available Skills
 
+### Asset And Identity
+
 | Skill | Description |
 |---|---|
-| [create-custom-vega-icon](skills/create-custom-vega-icon/SKILL.md) | Generate Vega icon registration and usage examples for custom SVG icons across JavaScript, React, Angular, Vue, and similar app setups. |
-| [display-vega-dialog](skills/display-vega-dialog/SKILL.md) | Generate Vega dialog and modal examples, including confirmations, destructive actions, and framework-specific integration guidance. |
-| [display-vega-notification](skills/display-vega-notification/SKILL.md) | Generate Vega notification examples, including toast display, dismiss behavior, action buttons, and framework-specific integration guidance. |
-| [use-vega-translation](skills/use-vega-translation/SKILL.md) | Generate Vega translation initialization and language-switching examples for localized Vega apps. |
+| [use-vega-custom-icon](skills/use-vega-custom-icon/SKILL.md) | Generate Vega icon registration and usage examples for custom SVG icons across JavaScript, React, Angular, Vue, and similar app setups. |
+
+### Lifecycle And Readiness
+
+| Skill | Description |
+|---|---|
+| [use-vega-render-status](skills/use-vega-render-status/SKILL.md) | Generate Vega render-status examples, including waitForVega usage, post-render flow coordination, and framework-specific integration guidance. |
+
+### Interaction And Feedback
+
+| Skill | Description |
+|---|---|
+| [use-vega-dialog](skills/use-vega-dialog/SKILL.md) | Generate Vega dialog and modal examples, including confirmations, destructive actions, and framework-specific integration guidance. |
+| [use-vega-loading-indicator](skills/use-vega-loading-indicator/SKILL.md) | Generate Vega loading indicator examples, including page overlays, container-scoped loaders, progress configuration, and framework-specific integration guidance. |
+| [use-vega-skeleton-loader](skills/use-vega-skeleton-loader/SKILL.md) | Generate Vega skeleton loader examples, including placeholder layouts, managed removal flows, and framework-specific integration guidance. |
+| [use-vega-notification](skills/use-vega-notification/SKILL.md) | Generate Vega notification examples, including toast display, dismiss behavior, action buttons, and framework-specific integration guidance. |
+
+### Theme, Brand, And Localization
+
+| Skill | Description |
+|---|---|
+| [use-vega-branding](skills/use-vega-branding/SKILL.md) | Generate Vega branding examples, including supported brand switching, official logo usage, and framework-specific integration guidance. |
+| [use-vega-dark-mode](skills/use-vega-dark-mode/SKILL.md) | Generate Vega dark mode examples, including theme toggling, saved preference restoration, and framework-specific integration guidance. |
+| [use-vega-translation](skills/use-vega-translation/SKILL.md) | Generate Vega translation examples, including initialization, language switching, and framework-specific integration guidance. |
+| [use-vega-white-labeling](skills/use-vega-white-labeling/SKILL.md) | Generate Vega white labeling examples, including client-specific color overrides, reset behavior, and framework-specific integration guidance. |
 
 ## What These Skills Are For
 
@@ -38,12 +61,18 @@ Use this repository when you want an AI agent to help create or extend a Vega ap
 - return ready-to-use examples instead of vague instructions
 - adapt examples for common frameworks and runtime environments
 
-Current coverage focuses on four common Vega app tasks:
+Current coverage focuses on ten common Vega app tasks:
 
 - registering and rendering custom Vega icons
+- checking when Vega components have finished rendering
 - opening standard dialogs or custom modal flows
+- applying supported Vega branding
+- enabling and managing dark mode
+- showing loading overlays or container-scoped loading indicators
+- showing skeleton placeholder layouts while content loads
 - showing Vega notifications and dismiss flows
 - initializing Vega translation resources and switching languages
+- applying white label client color overrides
 
 ## Contributing
 
@@ -60,12 +89,24 @@ When adding or updating a skill:
 
 ```text
 skills/
-	create-custom-vega-icon/
+	use-vega-custom-icon/
 		SKILL.md
-	display-vega-dialog/
+	use-vega-render-status/
 		SKILL.md
-	display-vega-notification/
+	use-vega-dialog/
+		SKILL.md
+	use-vega-branding/
+		SKILL.md
+	use-vega-dark-mode/
+		SKILL.md
+	use-vega-loading-indicator/
+		SKILL.md
+	use-vega-skeleton-loader/
+		SKILL.md
+	use-vega-notification/
 		SKILL.md
 	use-vega-translation/
+		SKILL.md
+	use-vega-white-labeling/
 		SKILL.md
 ```
